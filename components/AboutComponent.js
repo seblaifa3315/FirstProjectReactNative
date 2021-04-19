@@ -38,9 +38,10 @@ class About extends Component {
             );
         };
 
+
         if (this.props.partners.isLoading) {
             return (
-                <ScrollView>
+                <ScrollView  style={{backgroundColor:"whitesmoke"}}>
                     <Mission />
                     <Card
                         title='Community Partners'>
@@ -52,7 +53,7 @@ class About extends Component {
         
         if (this.props.partners.errMess) {
             return (
-                <ScrollView>
+                <ScrollView  style={{backgroundColor:"whitesmoke"}}>
                     <Mission />
                     <Card
                         title='Community Partners'>
